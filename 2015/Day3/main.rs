@@ -1,9 +1,9 @@
-use std::fs;
 use std::collections::HashSet;
 
+use std::fs;
+
 fn main() {
-    let contents = fs::read_to_string("input.txt")
-        .expect("Failed to Read File");
+    let contents = fs::read_to_string("input.txt").expect("Failed to Read File");
 
     let mut x = 0;
     let mut y = 0;

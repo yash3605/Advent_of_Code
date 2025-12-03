@@ -1,9 +1,8 @@
-use std::fs;
 use std::collections::HashSet;
+use std::fs;
 
 fn main() {
-    let data = fs::read_to_string("input2.txt")
-        .expect("Failed to read Files");
+    let data = fs::read_to_string("input2.txt").expect("Failed to read Files");
 
     let mut santa_x = 0;
     let mut santa_y = 0;
@@ -15,7 +14,7 @@ fn main() {
     visited.insert((santa_x, santa_y));
 
     for (i, c) in data.trim().chars().enumerate() {
-        if i % 2 == 1{
+        if i % 2 == 1 {
             match c {
                 '^' => santa_y += 1,
                 'v' => santa_y -= 1,
@@ -28,7 +27,7 @@ fn main() {
     }
 
     for (i, c) in data.trim().chars().enumerate() {
-        if i % 2 == 0{
+        if i % 2 == 0 {
             match c {
                 '^' => robo_y += 1,
                 'v' => robo_y -= 1,
