@@ -36,7 +36,7 @@ fn check_id_2(id: i64) -> bool {
 }
 
 fn main() {
-    let s = fs::read_to_string("input.txt").expect("Failed to read File");
+    let s = fs::read_to_string("input_test.txt").expect("Failed to read File");
 
     let mut res_sum = 0;
 
