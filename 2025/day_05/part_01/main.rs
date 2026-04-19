@@ -37,7 +37,7 @@ fn main() {
         for &(start, end) in &ranges_vec {
             if id >= start && id <= end {
                 is_fresh = true;
-                break; // stop checking more ranges
+                break;
             }
         }
 
